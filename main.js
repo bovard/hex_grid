@@ -18,7 +18,7 @@
     var clicked = PIXI.Texture.fromImage('images/clicked.png');
 
     var newTile = function(x, y) {
-        // Create our goose with the gooseIdle texture
+        // Create our tile with the blank texture
         var tile = new PIXI.Sprite(blank);
         tile.scale.x /= TILE_SCALE;
         tile.scale.y /= TILE_SCALE;
@@ -29,7 +29,7 @@
         tile.position.x = x;
         tile.position.y = y;
 
-        // Make the goose interactive
+        // Make the tile interactive
         tile.interactive = true;
 
         var onEnter = function() {
